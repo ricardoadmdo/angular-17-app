@@ -1,1 +1,18 @@
-<h1>Hola {{ title }}</h1>
+<app-user />
+
+<div>
+	<h1>Angular</h1>
+	<article>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, consequuntur! Cumque ullam praesentium laboriosam, quis officiis
+			mollitia alias tempore, ut nobis accusantium provident illo vero minima repellat rem aliquam quod? Lorem Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Explicabo, consequuntur! Cumque ullam praesentium laboriosam, quis officiis mollitia alias tempore, ut nobis
+		</p>
+	</article>
+
+	@defer (on viewport) {<app-comments />} @placeholder {
+	<p>.</p>
+	}@loading {
+	<p>Cargando comentarios...</p>
+	}
+</div>
